@@ -15,11 +15,11 @@ pipeline {
             }
         }
         
-       /* stage('Install dependencies') {
+        stage('Install dependencies') {
             steps {
                 sh 'composer install'
             }
-        }*/
+        }
         
         stage('Run tests') {
             steps {

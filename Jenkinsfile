@@ -23,7 +23,7 @@ pipeline {
         
         stage('Run tests') {
             steps {
-                sh './vendor/bin/phpunit'
+                sh 'php bin/phpunit --filter'
             }
         }
     }

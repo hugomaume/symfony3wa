@@ -8,7 +8,11 @@ pipeline {
     stages {
         stage('Checkout'){
             steps {
-                git branch: 'main', url: 'https://github.com/hugomaume/symfony3wa'
+                git (
+                    url: 'https://github.com/hugomaume/symfony3wa.git',
+                    branch: 'master'
+                )
+
             }
         }
         

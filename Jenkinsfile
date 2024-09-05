@@ -23,7 +23,8 @@ pipeline {
         
         stage('Run tests') {
             steps {
-                sh 'php bin/phpunit --filter'
+                sh 'php -dxdebug.mode=off ./vendor/bin/phpunit'
+                sh 'php bin/phpunit'
             }
         }
     }
